@@ -1,0 +1,500 @@
+@import url("https://fonts.googleapis.com/css2?family=Bangers&display=swap");
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.section {
+  padding: 20px;
+  background-color: #eceae4;
+}
+
+@media only screen and (max-width: 576px) {
+  .section {
+    padding: 10px;
+  }
+}
+
+.header {
+  background-color: gray;
+  border: 2px solid black;
+  padding: 1.25rem;
+  margin: 2.5rem;
+}
+
+.main__div {
+  width: 95%;
+  margin: auto;
+}
+
+@media only screen and (max-width: 768px) {
+  .main__div {
+    width: 100%;
+  }
+}
+
+.main__font {
+  font-family: "Bangers", cursive;
+}
+
+.nav {
+  color: white;
+  background-color: gray;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  font-size: 2.5rem;
+  margin: auto;
+}
+
+.nav__title {
+  text-align: center;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+  text-shadow: 0.3rem 0.3rem 0.3rem #000;
+  margin: 1rem 0;
+}
+
+@media only screen and (max-width: 576px) {
+  .nav__title {
+    font-size: 1.5rem;
+  }
+}
+
+.nav__title:hover {
+  -webkit-animation: shake 0.5s;
+          animation: shake 0.5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.nav__title2 {
+  position: absolute;
+  text-align: center;
+  top: 3.6rem;
+  left: 62%;
+  margin: 1rem 0;
+  font-size: 1.5rem;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+  text-shadow: 0.3rem 0.3rem 0.3rem #000;
+}
+
+@media only screen and (max-width: 576px) {
+  .nav__title2 {
+    font-size: 0.8rem;
+    top: 2rem;
+  }
+}
+
+.nav__title2:hover {
+  -webkit-animation: shake 0.5s;
+          animation: shake 0.5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.footer {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 1%;
+  margin: auto;
+  background: transparent;
+  background-color: gray;
+  color: white;
+}
+
+.footer__text {
+  display: block;
+  font-size: 1.5rem;
+  margin: auto;
+}
+
+@media only screen and (max-width: 576px) {
+  .footer__text {
+    font-size: unset;
+  }
+}
+
+.footer__logo {
+  margin-right: 10px;
+}
+
+.footer__logo-img {
+  width: 8%;
+  max-width: 3.2rem;
+  border-radius: 50%;
+  margin-top: 0.62rem;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+}
+
+.footer__logo-img:hover {
+  -webkit-transform: scale(120%);
+          transform: scale(120%);
+}
+
+.bg-img {
+  background-image: url("https://cdn.pixabay.com/photo/2016/11/21/17/59/blackboard-1846865_960_720.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.card-flex-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media only screen and (max-width: 576px) {
+  .card-flex-center {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.card-centered {
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card-centered p {
+  margin: auto;
+}
+
+@-webkit-keyframes shake {
+  0% {
+    -webkit-transform: translate(1px, 1px) rotate(0deg);
+            transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    -webkit-transform: translate(-1px, -2px) rotate(-1deg);
+            transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    -webkit-transform: translate(-3px, 0px) rotate(1deg);
+            transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    -webkit-transform: translate(3px, 2px) rotate(0deg);
+            transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    -webkit-transform: translate(1px, -1px) rotate(1deg);
+            transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    -webkit-transform: translate(-1px, 2px) rotate(-1deg);
+            transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    -webkit-transform: translate(-3px, 1px) rotate(0deg);
+            transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    -webkit-transform: translate(3px, 1px) rotate(-1deg);
+            transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    -webkit-transform: translate(-1px, -1px) rotate(1deg);
+            transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    -webkit-transform: translate(1px, 2px) rotate(0deg);
+            transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translate(1px, -2px) rotate(-1deg);
+            transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
+
+@keyframes shake {
+  0% {
+    -webkit-transform: translate(1px, 1px) rotate(0deg);
+            transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    -webkit-transform: translate(-1px, -2px) rotate(-1deg);
+            transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    -webkit-transform: translate(-3px, 0px) rotate(1deg);
+            transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    -webkit-transform: translate(3px, 2px) rotate(0deg);
+            transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    -webkit-transform: translate(1px, -1px) rotate(1deg);
+            transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    -webkit-transform: translate(-1px, 2px) rotate(-1deg);
+            transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    -webkit-transform: translate(-3px, 1px) rotate(0deg);
+            transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    -webkit-transform: translate(3px, 1px) rotate(-1deg);
+            transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    -webkit-transform: translate(-1px, -1px) rotate(1deg);
+            transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    -webkit-transform: translate(1px, 2px) rotate(0deg);
+            transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translate(1px, -2px) rotate(-1deg);
+            transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
+
+.d-none {
+  display: none;
+}
+
+.game {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: auto;
+  width: 50%;
+  border-radius: 1.5rem;
+  border: 2px solid #000;
+}
+
+@media only screen and (max-width: 576px) {
+  .game {
+    width: 95%;
+  }
+}
+
+.game__cell {
+  width: 4.5rem;
+  margin: auto;
+  padding: 1rem 2rem;
+}
+
+.game__img {
+  width: 100%;
+}
+
+.game__btn-init {
+  font-family: "Bangers", cursive;
+  font-size: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 1rem 1rem;
+  padding: 1rem 2rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 1.5rem;
+  border: 2px solid black;
+  background-color: #4caf50;
+  -webkit-box-shadow: 0.3rem 0.3rem 0.3rem 0 #000;
+          box-shadow: 0.3rem 0.3rem 0.3rem 0 #000;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}
+
+.game__btn-init > p {
+  margin-block: 0;
+}
+
+.game__btn-init:hover {
+  -webkit-transform: scale(115%);
+          transform: scale(115%);
+}
+
+@media only screen and (max-width: 576px) {
+  .game__btn-init {
+    font-size: unset;
+    margin: 1rem auto;
+    padding: 1rem 1rem;
+    -webkit-box-shadow: 0.1rem 0.1rem 0.1rem 0 #000;
+            box-shadow: 0.1rem 0.1rem 0.1rem 0 #000;
+  }
+}
+
+.game__btn-canc {
+  font-family: "Bangers", cursive;
+  font-size: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 1rem 1rem;
+  padding: 1rem 2rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 1.5rem;
+  border: 2px solid black;
+  background-color: #4caf50;
+  -webkit-box-shadow: 0.3rem 0.3rem 0.3rem 0 #000;
+          box-shadow: 0.3rem 0.3rem 0.3rem 0 #000;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+  background-color: red;
+}
+
+.game__btn-canc > p {
+  margin-block: 0;
+}
+
+.game__btn-canc:hover {
+  -webkit-transform: scale(115%);
+          transform: scale(115%);
+}
+
+@media only screen and (max-width: 576px) {
+  .game__btn-canc {
+    font-size: unset;
+    margin: 1rem auto;
+    padding: 1rem 1rem;
+    -webkit-box-shadow: 0.1rem 0.1rem 0.1rem 0 #000;
+            box-shadow: 0.1rem 0.1rem 0.1rem 0 #000;
+  }
+}
+
+.game__resul {
+  font-family: "Bangers", cursive;
+  font-size: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 1rem 1rem;
+  padding: 1rem 2rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 1.5rem;
+  border: 2px solid black;
+  background-color: #4caf50;
+  -webkit-box-shadow: 0.3rem 0.3rem 0.3rem 0 #000;
+          box-shadow: 0.3rem 0.3rem 0.3rem 0 #000;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+  background-color: white;
+}
+
+.game__resul > p {
+  margin-block: 0;
+}
+
+.game__resul:hover {
+  -webkit-transform: scale(115%);
+          transform: scale(115%);
+}
+
+@media only screen and (max-width: 576px) {
+  .game__resul {
+    font-size: unset;
+    margin: 1rem auto;
+    padding: 1rem 1rem;
+    -webkit-box-shadow: 0.1rem 0.1rem 0.1rem 0 #000;
+            box-shadow: 0.1rem 0.1rem 0.1rem 0 #000;
+  }
+}
+
+.game__resul:hover {
+  -webkit-animation: shake 0.5s;
+          animation: shake 0.5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.game__points-1 {
+  padding: 0 1rem;
+  margin: 0;
+  color: blue;
+}
+
+.game__points-2 {
+  padding: 0 1rem;
+  margin: 0;
+  color: red;
+}
+/*# sourceMappingURL=styles.css.map */

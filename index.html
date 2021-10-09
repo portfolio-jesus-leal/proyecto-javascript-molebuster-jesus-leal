@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="keywords" content="web, developer, development, portfolio, jesus, leal" />
-    <link rel="icon" href="/images/icon.svg" type="image/svg+xml">
-
+    <link rel="icon" href="/images/mole-svgrepo-com1.svg" type="image/svg+xml">
+    <script src="./index.js"></script>
     <title>MoleBuster Game</title>
     <link rel="stylesheet" href="/styles/styles.css">
 </head>
@@ -19,6 +19,7 @@
         <header>
             <nav class="nav bg-img">
                 <h1 class="nav__title">MoleBuster Game</h1>
+                <span class="nav__title2">By Jesús Leal</span>
             </nav>
         </header>
         <!-- HEADER END -->
@@ -28,65 +29,24 @@
             <article class="article">
                 <section class="section">
 
-                    <div class="game">
+                    <div class="game" id="game">
 
-                        <div class="game__cell"><img class="game__img" src="/images/mole-svgrepo-com.svg" alt="Mole">
-                        </div>
-                        <div class="game__cell"><img class="game__img" src="/images/mole-svgrepo-com.svg" alt="Mole">
-                        </div>
-                        <div class="game__cell"><img class="game__img" src="/images/mole-svgrepo-com.svg" alt="Mole">
-                        </div>
-                        <div class="game__cell"><img class="game__img" src="/images/mole-svgrepo-com.svg" alt="Mole">
-                        </div>
-
-                        <div class="game__cell"><img class="game__img" src="/images/mole-svgrepo-com.svg" alt="Mole">
-                        </div>
-                        <div class="game__cell"><img class="game__img" src="/images/mole-svgrepo-com.svg" alt="Mole">
-                        </div>
-                        <div class="game__cell"><img class="game__img" src="/images/mole-svgrepo-com.svg" alt="Mole">
-                        </div>
-                        <div class="game__cell"><img class="game__img" src="/images/mole-svgrepo-com.svg" alt="Mole">
-                        </div>
-
-                        <div class="game__cell"><img class="game__img" src="/images/mole-svgrepo-com.svg" alt="Mole">
-                        </div>
-                        <div class="game__cell"><img class="game__img" src="/images/mole-svgrepo-com.svg" alt="Mole">
-                        </div>
-                        <div class="game__cell"><img class="game__img" src="/images/mole-svgrepo-com.svg" alt="Mole">
-                        </div>
-                        <div class="game__cell"><img class="game__img" src="/images/mole-svgrepo-com.svg" alt="Mole">
-                        </div>
-
-                        <div class="game__cell"><img class="game__img" src="/images/mole-svgrepo-com.svg" alt="Mole">
-                        </div>
-                        <div class="game__cell"><img class="game__img" src="/images/mole-svgrepo-com.svg" alt="Mole">
-                        </div>
-                        <div class="game__cell"><img class="game__img" src="/images/mole-svgrepo-com.svg" alt="Mole">
-                        </div>
-                        <div class="game__cell"><img class="game__img" src="/images/mole-svgrepo-com.svg" alt="Mole">
-                        </div>
-
-
-                        <div class="game__cell"><img class="game__img" src="/images/mole-svgrepo-com.svg" alt="Mole">
-                        </div>
-                        <div class="game__cell"><img class="game__img" src="/images/mole-svgrepo-com.svg" alt="Mole">
-                        </div>
-                        <div class="game__cell"><img class="game__img" src="/images/mole-svgrepo-com.svg" alt="Mole">
-                        </div>
-                        <div class="game__cell"><img class="game__img" src="/images/mole-svgrepo-com.svg" alt="Mole">
-                        </div>
+                        <!-- Here will be include the game dshboard-->
 
                     </div>
 
-                    <div class="card-centered">
+                    <div class="card-flex-center">
 
-                        <div class="game__btn-init">
+                        <div class="game__btn-init" id="game__btn-init">
                             <p>Empezar</p>
                         </div>
                         <div class="game__resul">
-                            <span class="game__points-1">0</span>
+                            <span class="game__points-1" id="game__points-1">0</span>
                             <span> | </span>
-                            <span class="game__points-2">0</span>
+                            <span class="game__points-2" id="game__points-2">0</span>
+                        </div>
+                        <div class="game__btn-canc" id="game__btn-canc">
+                            <p>Cancelar</p>
                         </div>
                     </div>
 
