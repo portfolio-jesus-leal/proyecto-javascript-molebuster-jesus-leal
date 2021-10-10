@@ -1,17 +1,20 @@
 let isPlaying = false;
 let point1 = 0;
 let point2 = 0;
-let chosenMole = 0;
+let chosenMole = '';
 let timeoutID = 0;
 let attemptsCounter = 0;
 const maxNumberMole = 20;
 const attempts = 10;
+const nTimeout = 1800;
+const nPause = 900;
 
 //
 // Initialize game
 //
 function init() {
 
+    hideGameOver();
     includeHoles(maxNumberMole);
     prepareButtons();
 
@@ -59,14 +62,9 @@ function playGame(nTimes) {
 
     console.log('playGame');
     
-    chosenMole = selectRamdomMole(maxNumberMole);
-    console.log('chosenMole ->', chosenMole);
-    window.document.getElementById('game__img_' + chosenMole).src = "/images/mole-svgrepo-com.svg";
-    
-    console.log('Empieza el tiempo');
-    
-    timeoutID = setTimeout(showKo, 2000, 'game__img_' + chosenMole);
-    console.log('timeoutID ->', timeoutID);   
+    chosenMole = 'game__img_' + selectRamdomMole(maxNumberMole);
+    window.document.getElementById(chosenMole).src = "/images/mole-svgrepo-com.svg";
+    timeoutID = setTimeout(showKo, nTimeout, chosenMole);
 }
 
 //
@@ -75,12 +73,9 @@ function playGame(nTimes) {
 function clickImg(event) {
 
     console.log('clickImg');
-    console.log(event);
-    console.log(event.target.id);
-
     clearTimeout(timeoutID);
 
-    if ( event.target.id == 'game__img_' + chosenMole) {
+    if ( event.target.id == chosenMole) {
         console.log("BIEEEN! Es el mismo");
         showOk(event.target.id);
     } else {
@@ -100,6 +95,7 @@ function clickPlayButton() {
         isPlaying = true;
         resetPoints();
         cleanGamePanel();
+        hideGameOver();
         playGame();
     } else {
         console.error('Ya está jugando');
@@ -112,8 +108,10 @@ function clickPlayButton() {
 function clickCancelButton() {
 
     console.log('clickCancelButton');
-    clearTimeout(timeoutID);
     isPlaying = false;
+    clearTimeout(timeoutID);
+    cleanGamePanel();
+    showGameOver();
 }
 
 //
@@ -140,6 +138,9 @@ function showOk(elem) {
     playAgain();
 }
 
+//
+// Play successive games
+//
 function playAgain() {
 
     attemptsCounter++;
@@ -154,6 +155,7 @@ function playAgain() {
     } else {
         isPlaying = false;
         attemptsCounter = 0;
+        showGameOver()
     }     
 }
 
@@ -202,6 +204,15 @@ function cleanGamePanel() {
     });
 }
 
+function showGameOver() {
+    console.log('showGameOver');
+    document.querySelector('.game__over').classList.remove('d-none');
+}
+
+function hideGameOver() {
+    console.log('hideGameOver');
+    document.querySelector('.game__over').classList.add('d-none');
+}
 
 window.onload = () => {
     

@@ -314,7 +314,13 @@ a {
   border: 2px solid #000;
 }
 
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 1200px) {
+  .game {
+    width: 75%;
+  }
+}
+
+@media only screen and (max-width: 992px) {
   .game {
     width: 95%;
   }
@@ -324,6 +330,13 @@ a {
   width: 4.5rem;
   margin: auto;
   padding: 1rem 2rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .game__cell {
+    width: 8vw;
+    padding: 1rem;
+  }
 }
 
 .game__img {
@@ -372,7 +385,7 @@ a {
 @media only screen and (max-width: 576px) {
   .game__btn-init {
     font-size: unset;
-    margin: 1rem auto;
+    margin: 0.3rem auto;
     padding: 1rem 1rem;
     -webkit-box-shadow: 0.1rem 0.1rem 0.1rem 0 #000;
             box-shadow: 0.1rem 0.1rem 0.1rem 0 #000;
@@ -422,7 +435,7 @@ a {
 @media only screen and (max-width: 576px) {
   .game__btn-canc {
     font-size: unset;
-    margin: 1rem auto;
+    margin: 0.3rem auto;
     padding: 1rem 1rem;
     -webkit-box-shadow: 0.1rem 0.1rem 0.1rem 0 #000;
             box-shadow: 0.1rem 0.1rem 0.1rem 0 #000;
@@ -472,7 +485,7 @@ a {
 @media only screen and (max-width: 576px) {
   .game__resul {
     font-size: unset;
-    margin: 1rem auto;
+    margin: 0.3rem auto;
     padding: 1rem 1rem;
     -webkit-box-shadow: 0.1rem 0.1rem 0.1rem 0 #000;
             box-shadow: 0.1rem 0.1rem 0.1rem 0 #000;
@@ -496,5 +509,27 @@ a {
   padding: 0 1rem;
   margin: 0;
   color: red;
+}
+
+.game__over {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  width: 35%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  -webkit-box-shadow: 0.3rem 0.3rem 0.3rem 0 #000;
+          box-shadow: 0.3rem 0.3rem 0.3rem 0 #000;
+  border: 2px solid black;
+  background-color: lightblue;
+  text-align: center;
+  border-radius: 1.5rem;
+  font-size: 3rem;
+}
+
+@media only screen and (max-width: 576px) {
+  .game__over {
+    font-size: 1.5rem;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
