@@ -22,19 +22,16 @@ a {
   margin: 2.5rem;
 }
 
-.main__div {
+.body {
   width: 95%;
   margin: auto;
+  font-family: "Bangers", cursive;
 }
 
 @media only screen and (max-width: 768px) {
-  .main__div {
+  .body {
     width: 100%;
   }
-}
-
-.main__font {
-  font-family: "Bangers", cursive;
 }
 
 .nav {
@@ -382,6 +379,11 @@ a {
           transform: scale(115%);
 }
 
+.game__btn-init:active {
+  -webkit-transform: scale(90%);
+          transform: scale(90%);
+}
+
 @media only screen and (max-width: 576px) {
   .game__btn-init {
     font-size: unset;
@@ -432,6 +434,11 @@ a {
           transform: scale(115%);
 }
 
+.game__btn-canc:active {
+  -webkit-transform: scale(90%);
+          transform: scale(90%);
+}
+
 @media only screen and (max-width: 576px) {
   .game__btn-canc {
     font-size: unset;
@@ -480,6 +487,11 @@ a {
 .game__resul:hover {
   -webkit-transform: scale(115%);
           transform: scale(115%);
+}
+
+.game__resul:active {
+  -webkit-transform: scale(90%);
+          transform: scale(90%);
 }
 
 @media only screen and (max-width: 576px) {

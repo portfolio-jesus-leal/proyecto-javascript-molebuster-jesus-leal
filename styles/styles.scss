@@ -51,6 +51,10 @@ $desktop_xl_breakpoint      : 1600px;
         transform: scale(115%);
     }
 
+    &:active {
+        transform: scale(90%);
+    }
+
     @include mobile {
         font-size : unset;
         margin    : 0.3rem auto;
@@ -106,18 +110,13 @@ a {
     margin          : 2.5rem;
 }
 
-.main {
-    &__div {
-        width : 95%;
-        margin: auto;
+.body {
+    width      : 95%;
+    margin     : auto;
+    font-family: $font-main;
 
-        @include tablet {
-            width: 100%;
-        }
-    }
-
-    &__font {
-        font-family: $font-main;
+    @include tablet {
+        width: 100%;
     }
 }
 
@@ -313,7 +312,7 @@ a {
         padding: 1rem 2rem;
 
         @include tablet() {
-            width: 8vw;
+            width  : 8vw;
             padding: 1rem;
         }
     }
@@ -368,7 +367,7 @@ a {
         font-size       : 3rem;
 
         @include mobile {
-            font-size : 1.5rem;
+            font-size: 1.5rem;
         }
     }
 }
