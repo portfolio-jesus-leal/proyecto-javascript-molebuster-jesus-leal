@@ -1,3 +1,6 @@
+//
+// General variables and constants
+//
 let isPlaying = false;
 let point1 = 0;
 let point2 = 0;
@@ -74,10 +77,8 @@ function clickImg(event) {
   clearTimeout(timeoutID);
 
   if (event.target.id == chosenMole) {
-    console.log("BIEEEN! Es el mismo");
     showOk(event.target.id);
   } else {
-    console.log("OHHHH! No es el correcto");
     showKo(event.target.id);
   }
 }
@@ -117,7 +118,7 @@ function clickCancelButton() {
 // Player has clicked on a hole and not on the mole
 //
 function showKo(elem) {
-  console.log("showKo ->", elem);
+  console.log("showKo");
   $$elem = window.document.querySelector("#" + elem);
   $$elem.src = "/images/error-svgrepo-com.svg";
   addPointKo();
@@ -153,18 +154,27 @@ function playAgain() {
   }
 }
 
+//
+// Add a point OK
+//
 function addPointOk() {
   console.log("addPointOk");
   point1++;
   updatePointOk(point1);
 }
 
+//
+// Add a point KO
+//
 function addPointKo() {
   console.log("addPointKo");
   point2++;
   updatePointKo(point2);
 }
 
+//
+// Set points to zero
+//
 function resetPoints() {
   console.log("resetPointOk");
   point1 = 0;
@@ -173,10 +183,16 @@ function resetPoints() {
   updatePointKo(point2);
 }
 
+// 
+// Update points OK on the web
+// 
 function updatePointOk(value) {
   window.document.querySelector("#game__points-1").textContent = value;
 }
 
+// 
+// Update points KO on the web
+// 
 function updatePointKo(value) {
   window.document.querySelector("#game__points-2").textContent = value;
 }
@@ -188,6 +204,9 @@ function selectRamdomMole(maxValue) {
   return Math.round((maxValue - 1) * Math.random()) + 1;
 }
 
+//
+// Initialize the game panel and makes it ready for a new game
+//
 function cleanGamePanel() {
   console.log("cleanGamePanel");
   const $$cells = document.querySelectorAll(".game__img");
@@ -196,16 +215,25 @@ function cleanGamePanel() {
   });
 }
 
+//
+// Show the Game Over message
+//
 function showGameOver() {
   console.log("showGameOver");
   document.querySelector(".game__over").classList.remove("d-none");
 }
 
+//
+// Hide the Game Over message
+// 
 function hideGameOver() {
   console.log("hideGameOver");
   document.querySelector(".game__over").classList.add("d-none");
 }
 
+//
+// Main function
+//
 window.onload = () => {
   console.log("Onload");
   init();
